@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texty</title>
+</head>
+<body>
+    <h1>Texty</h1>
+    <h2>About Texty</h2>
+    <p>Texty is an online text editor tool made for the alternatenet by
+        Usang Du. Although, you can't really save your files right now,
+        but I believe the feature will be added in future updates! For
+        now, enjoy!
+    </p>
+
+    <h2>Type your text here!</h2>
+    <input type="text" id="textInput" disabled>
+    <p>Insert Mode <input type="checkbox" id="insertMode"></p>
+
+    <br><br>
+    <h2>Copyright inversed, Texty 2026</h2>
+    <center>
+        <a href="AS.html">Back</a>
+    </center>
+
+    <script>
+        // Get elements
+        const checkbox = document.getElementById("insertMode");
+        const input = document.getElementById("textInput");
+
+        // Listen for checkbox change
+        checkbox.addEventListener("change", () => {
+            input.disabled = !checkbox.checked;
+        });
+    </script>
+</body>
+</html>
